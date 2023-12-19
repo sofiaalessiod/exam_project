@@ -46,3 +46,203 @@
 #spots-title {
   text-align: center;
 }
+
+
+@media only screen and (max-width: 768px) {
+  #spots-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5%;
+  }
+
+  #spots-content a {
+    text-decoration: none; 
+    width: 100%;
+  }
+
+  .spots-content-box {
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+
+}
+
+
+/* here starts spot 1: Jelling */
+
+#spot-title-city h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  box-sizing: border-box;
+}
+
+#spot-subtitle-city h1 {
+  font-size: 3rem;
+  font-style: italic;
+  text-align: center;
+}
+
+#facilities-items-major-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#facilities-items-container {
+  flex: 0 0 48%;
+}
+
+.facilities-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 7%;
+  width: 120px;
+}
+
+
+#spot-description {
+  display: flex;
+  flex-direction: row;
+  padding: 0%;
+  justify-content: space-around;
+}
+
+#spot-description-column {
+  width: 35%;
+}
+
+
+
+#weather {
+  background-color: #BE615B;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 1%;
+}
+
+#weather h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+#weather h3 {
+  font-style: italic;
+  font-weight: 400;
+}
+
+#weather-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+
+.weather-day {
+  background-color: white;
+  border-radius: 25px;
+  padding: 1%;
+  width: 10%;
+}
+
+
+#ratings {
+  background-color: #6B89A0;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 1%;
+}
+
+#ratings h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+#ratings-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 2%;
+}
+
+.ratings-content-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1%;
+  width: 13%;
+  text-align: left;
+}
+
+.ratings-content-item p {
+font-style: italic;
+}
+
+
+#gallery {
+  background-color: #E1D379;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  padding-top: 1%;
+
+}
+
+#gallery h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+#gallery-content {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: center;
+
+}
+
+.gallery-content-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+#messages {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+}
+
+#messages h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+#messages h3 {
+  font-style: italic;
+  font-weight: 400;
+}
+
+#suggestion-box {
+  width: 60%;
+  height: 100px;
+}
+
+#petition-box {
+  width: 60%;
+  height: 100px;
+}
+
+.suggestion {
+  background-color: #C5A07B;
+  width: 50%;
+  padding-bottom: 35px;
+}
+
+.petition {
+  background-color: #A18161;
+  width: 50%;
+  padding-bottom: 35px;
+}
