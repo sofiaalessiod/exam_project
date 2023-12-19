@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 30px;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
+  padding-left: 0.5%;
+  padding-right: 3.5%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#logo {
+  width: 50%;
+}
+
+#section1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#section1 div {
+  position: relative;
+}
+
+#section1 h3 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 2;
+  font-size: 2rem;
+  color: #E94D41;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#section1 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 2;
+  font-size: 5rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  font-weight: 900;
+}
+
+#section1 img {
+  width: 100%;
+  filter: brightness(0.5);
+  z-index: 1;
+}
+
+#section2 {
+  padding: 5%;
+}
+
+#section2 h3 {
+  font-size: 2rem;
+}
+
+#section2 p {
+  font-size: 1.2rem;
+}
+
+#home-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#home-content-text {
+  width: 65%;
+}
+
+#home-content-img {
+  width: 25%;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #818181;
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+#close-icon {
+  display: none;
+}
+
+footer {
+  box-sizing: border-box;
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  background-color: #1C1C1C;
+  color: white;
+  box-sizing: border-box;
+
+}
+
+.footer-element {
+  padding: 2%;
+
+}
+
+.footer-element-centered {
+  padding: 2%;
+  text-align: center;
+}
+
+.p-underlined {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  header {
+    height: 3rem;
+    padding-left: 3%;
+    padding-right: 7%;
+  }
+
+  #logo {
+    width: 50px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 5;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  #close-icon {
+    color: white;
+    font-size: 50px;
+  }
+
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #section1 h3 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 2;
+    font-size: 1rem;
+    color: #E94D41;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#section1 h1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 2;
+    font-size: 2rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+}
+
+#section2 {
+  padding-right: 8%;
+}
+
+#home-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#home-content-text {
+  width: 100%;
+}
+
+#home-content-img {
+  width: 100%;
+}
+
+}
