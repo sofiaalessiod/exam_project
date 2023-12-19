@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>
-    	<div style="width: 15%;">
+    	<div style="width: 15%; height: auto;">
 				<a href="index.html"><img src="media/logo.png" id="logo" /></a>
 			</div>
 			<div>
@@ -37,17 +37,17 @@
 					<h3>Welcome to</h3>
 					<h1>SKATEBOARDING IN JUTLAND</h1>
 					<div>
-						<img
-							src="media/homegif.gif"
-							style="width: 100%; filter: brightness(0.5);"
-						/>
+            <img
+            src="media/homegif.gif"
+            alt="Skateboarding in Jutland"
+          />
 					</div>
 				</div>
 			</section>
 
 			<section id="section2">
-				<div>
-					<div>
+				<div id="home-content">
+					<div id="home-content-text">
 						<h3>So you moved to Jutland...</h3>
 						<p>
 							Welcome to our <strong>digital skateboarding sanctuary!</strong> 
@@ -59,31 +59,34 @@
 							initiative aimed at connecting skateboarders across Jutland. 
 						</p>
 					</div>
-					<div>
+					<div id="home-content-img">
 						<img
 							src="media/home1.png"
-							style="border-radius: 15px; width: 100%"
+							style="border-radius: 7px; width: 100%"
 						/>
 					</div>
 				</div>
+        <br>
+        <br>
+        <br>
+				<div id="home-content">
+					<div id="home-content-text">
+            <h3>We’ve got you covered, skater...</h3>
+            <p>
+              Whether you're a seasoned rider or a curious newcomer, 
+              our platform is designed to be <strong>your go-to resource for 
+              discovering local skate spots</strong> and immersing yourself 
+              in the camaraderie of our <strong>thriving skateboarding community</strong>.
+              Join us on this ride as we navigate the streets, parks, 
+              and hidden gems of Jutland, fueled by the adrenaline of 
+              skateboarding and the shared passion that unites us all.
+            </p>
+          </div>
 
-				<div>
-					<div>
-					<h3>We’ve got you covered, skater...</h3>
-					<p>
-						Whether you're a seasoned rider or a curious newcomer, 
-						our platform is designed to be <strong>your go-to resource for 
-						discovering local skate spots</strong> and immersing yourself 
-						in the camaraderie of our <strong>thriving skateboarding community</strong>.
-						Join us on this ride as we navigate the streets, parks, 
-						and hidden gems of Jutland, fueled by the adrenaline of 
-						skateboarding and the shared passion that unites us all.
-					</p>
-					</div>
-					<div>
-						<img
+					<div id="home-content-img">						
+            <img
 						src="media/home2.png"
-						style="border-radius: 15px; width: 100%"
+						style="border-radius: 7px; width: 100%"
 						/>
 					</div>
 				</div>
@@ -189,22 +192,88 @@
 	}
 
 	header {
-		
 		width: 100%;
-		padding: 5%;
+    height: 30px;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+		padding-left: 0.5%;
+    padding-right: 3.5%;
 		text-align: center;
 		display: flex;
 		justify-content: space-between;
-		box-sizing: border-box;
+    align-items: center;
+    box-sizing: border-box;
 	}
 
   #logo {
-		width: 100%;
+		width: 50%;
 	}
+
+  #section1 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  #section1 div {
+    position: relative;
+  }
+
+  #section1 h3 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 2;
+    font-size: 2rem;
+    color: #E94D41;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  #section1 h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 2;
+    font-size: 5rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+  }
+
+  #section1 img {
+    width: 100%;
+    filter: brightness(0.5);
+    z-index: 1;
+  }
 
   #section2 {
 		padding: 5%;
 	}
+
+  #section2 h3 {
+    font-size: 2rem;
+  }
+
+  #section2 p {
+    font-size: 1.2rem;
+  }
+
+  #home-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #home-content-text {
+    width: 65%;
+  }
+
+  #home-content-img {
+    width: 25%;
+  }
 
 	nav {
 		display: flex;
@@ -214,7 +283,7 @@
 		display: block;
 		padding: 10px;
 		text-decoration: none;
-		color: white;
+		color: #818181;
 	}
 
 	#menu-icon {
@@ -223,12 +292,22 @@
 		display: none;
 	}
 
+  #close-icon {
+    display: none;
+	}
+
+  footer {
+    box-sizing: border-box;
+  }
+
 	.footer-div {
 		display: flex;
 		flex-direction: row;
 		padding: 5%;
 		background-color: #1C1C1C;
 		color: white;
+    box-sizing: border-box;
+
 	}
 
 	.footer-element {
@@ -252,7 +331,18 @@
 	}
 
 	@media only screen and (max-width: 768px) {
-		nav {
+		
+    header {
+      height: 3rem;
+      padding-left: 3%;
+      padding-right: 7%;
+    }
+
+    #logo {
+      width: 50px;
+    }
+
+    nav {
 			display: none;
 			flex-direction: column;
 			position: absolute;
@@ -260,7 +350,7 @@
 			left: 0;
 			width: 100%;
 			background-color: #333;
-			z-index: 1;
+			z-index: 5;
 		}
 
 		nav.show {
@@ -275,6 +365,52 @@
 			color: white;
 			font-size: 50px;
 		}
+
+    .footer-div {
+      display: flex;
+      flex-direction: column;
+	  }
+
+    #section1 h3 {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      z-index: 2;
+      font-size: 1rem;
+      color: #E94D41;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  #section1 h1 {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      z-index: 2;
+      font-size: 2rem;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+      font-weight: 900;
+  }
+
+  #section2 {
+    padding-right: 8%;
+  }
+
+  #home-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #home-content-text {
+    width: 100%;
+  }
+
+  #home-content-img {
+    width: 100%;
+  }
 
 	}
 </style>
