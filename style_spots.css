@@ -1,9 +1,38 @@
+#spots-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5%;
+}
+
+#spots-content a {
+  text-decoration: none; 
+  width: 27%;
+}
+
 .spots-content-box {
   background-color: #83a5c0;
-  width: 25%;
-  padding: 1%;
+  height: 17rem;
+  padding: 6%;
   position: relative;
   z-index: -2;
+}
+
+.spots-content-box div h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  color: black;
+  margin-top: -5px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+.spots-content-box div h2 {
+  color: black;
+}
+
+.spots-content-box div p {
+  color: black;
 }
 
 .spots-content-box-img {
@@ -12,4 +41,8 @@
   right: 0;
   padding: 5%;
   z-index: -1;
+}
+
+#spots-title {
+  text-align: center;
 }
